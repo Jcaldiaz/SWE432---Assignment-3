@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picante FM - DJ</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Figtree:wght@400&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="djwebsite.css">
+</head>
+
+<body>
+
+<header>
+  <a href="mainpage.html"><img src="images/logo.png" alt="Picante FM Logo" class="logo"></a>
+  <nav>
+    <ul>
+        <li><a href="#">Producer</a></li>
+        <li><a href="djwebsite.html">DJ</a></li>
+        <li><a href="#">Manager</a></li>
+    </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="left-column">
+        <div class="current">
+            <h3>Currently playing:</h3>
+            <p>Summer 24</p>
+        </div>
+        <div class="intro">
+            <h3>Playlists</h3><br>
+            <p>Explore our curated playlists to find the perfect inspiration
+                 for your next set! Dive into a world of sounds that 
+                 can help you discover your unique style and elevate your performances. 
+                 Whether you're looking for fresh beats or timeless classics, we have 
+                 something for everyone.</p>
+        </div>
+    </div>
+    <div class="right-column">
+        <form onsubmit="return validateForm()" action="djweb.html">
+            <p><label>Username</label></p>
+            <p><input id="username"></p>
+            <p><label>Password</label></p>
+            <p><input id="password" type = "password"></p>
+            <p class="hide">Space</p>
+            <button>Login</button>
+         </form>
+    </div>
+</div>
+
+<article class="playlists">
+    <div class="playlist right">
+        <img src="images/Urban.png">
+        <div class="playlist-body">
+            <div class="top-playlist">
+                <h3>Urban Picante</h3>
+                <button>Songs</button>
+            </div>
+            <p>Dive into the vibrant rhythms of the city with Urban Picante! 
+                This playlist is a spicy blend of urban beats, hip-hop grooves,
+                 and Latin flavors that will keep you moving. 
+                 Get ready to turn up the heat!</p>
+        </div>
+    </div>
+    <div class="playlist left">
+        <div class="playlist-body">
+            <div class="top-playlist">
+                <button>Songs</button>
+                <h3>Summer 24'</h3>
+            </div>
+            <p>Welcome to Summer 24, your ultimate soundtrack for sunny days
+                and warm nights! This playlist captures the essence of summer
+                 with upbeat tracks, infectious melodies, and feel-good vibes 
+                 that transport you to the beach. Get ready to embrace the season!</p>
+        </div>
+        <img src="images/Beach.png">
+    </div>
+    <div class="playlist right">
+        <img src="images/Hits.png">
+        <div class="playlist-body">
+            <div class="top-playlist">
+                <h3>Hits</h3>
+                <button>Songs</button>
+            </div>
+            <p>This playlist features the biggest anthems and feel-good songs that 
+                will keep you dancing and singing along. Perfect for any occasion, 
+                Hits brings the energy and excitement of today’s hottest music right
+                 to your ears. 
+                Get ready to enjoy the soundtrack of your life!</p>
+        </div>
+    </div>
+    
+</article>
+
+</body>
+
+<script src="djweb.js"></script>
+
+</html>

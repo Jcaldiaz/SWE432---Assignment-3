@@ -1,0 +1,284 @@
+/* ---------------------- BANNER ----------------------*/
+
+header {
+    background-image: url("images/Banner2.png");
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    left: 0; 
+    z-index: 100;
+}
+
+.logo {
+    width: 250px; 
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 80px;
+    font-family: "Poppins", sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+nav ul li a:hover {
+    color: #ffdd57; 
+}
+  
+
+/* ---------------------- WELCOME ----------------------*/
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.back {
+    background-color: rgb(64, 0, 81);
+    width: 200px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back a {
+    color: white;
+    text-decoration: none;
+}
+
+.back:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.account {
+    background-color: rgb(105, 29, 105);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-right: 0px;
+    height: 300px;
+    align-items: right;
+    justify-items:auto;
+    padding-right: 0px;
+}
+
+.info {
+    height: 250px;
+    justify-content: start;
+    text-align: right;
+    margin-top: 0px;
+    color: white;
+    background-color: rgb(105, 29, 105);
+    margin-right: 30px;
+}
+
+.info h3 {
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.account img {
+    height: 300px;
+    align-items: right;
+    padding-right: 0px;
+    border-radius: 10px;
+}
+
+.account {
+    background-color: rgb(105, 29, 105);
+}
+
+/* ---------------------- PLAYLISTS ----------------------*/
+
+
+body {
+    background-color: white;
+    font-family: "Poppins", "sans serif";
+    margin-top: 75px;
+}
+
+.toggle-image {
+    width: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* On hover or toggle, the image will scale */
+.toggle-image.scale {
+    transform: scale(1.2); /* Increase size to 120% */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+div {
+    background-color: white;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.playlist {
+    border-radius: 8px;  /* Optional: Rounds the corners */
+    background-color: white; /* Optional: Dark grey background */
+    color: white;        /* Optional: Text color for contrast */
+    padding: 30px;
+}
+
+/* Playlist info section */
+/* Styling for playlist-info */
+.playlist-info {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    border-radius: 10px;
+    margin: 0;
+    columns: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.playlist-info:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for playlists with the thumbnail on the left */
+.playlist-info.left {
+    flex-direction: row; /* Left: text to the right of the thumbnail */
+}
+
+.playlist-info.left .playlist-info-text {
+    display: flex;
+    flex-direction: column; /* Stack text in two rows */
+    justify-content: center; /* Vertically center text */
+}
+
+/* Styling for playlists with the thumbnail on the right */
+.playlist-info.right {
+    flex-direction: row-reverse; /* Right: text to the left of the thumbnail */
+}
+
+/* Thumbnail styling: make it square and size it appropriately */
+.playlist-thumbnail {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;  /* Ensure the image fills the square area without distortion */
+    margin-right: 0px; /* Space between the thumbnail and text (for left-aligned playlists) */
+    margin-left: 0px;  /* Space between the thumbnail and text (for right-aligned playlists) */
+}
+
+/* Adjust spacing when thumbnail is on the right */
+.playlist-info.right .playlist-thumbnail {
+    margin-left: 0px;
+    margin-right: 0;
+}
+
+/* Ensure text styling */
+.playlist-info h2 {
+    font-size: 2em;
+    margin: 0;
+    color: rgb(64, 0, 81);
+}
+
+.playlist-info.right h2 {
+    margin-left: 100px;
+}
+
+.playlist-info.left h2 {
+    margin-right: 100px;
+}
+
+.playlist-info p {
+    font-size: 1.5em;
+    margin: 5px 0 0;
+    font-family: "Figtree", sans-serif;
+    color: #581352;
+}
+
+.playlist-info.left .playlist-thumbnail {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 50px;
+}
+
+.playlist-info.right .playlist-thumbnail {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 50px;
+}
+
+/* Songs list section */
+.songs-list {
+    background-color: violet; /* Dark background for songs list */
+    padding: 20px;
+    border-radius: 15px;
+    columns: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.song-item {
+    display: grid;
+    grid-template-columns: 3fr 10fr 1fr 1fr; /* Four columns for title, artist, duration, image */
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #581352; /* Dark background for each song */
+    border-radius: 8px;     /* Rounded corners */
+    color: white;   
+    padding-left: 20px;
+    font-size: 13px;        /* Text color */
+}
+
+.song-title {
+    grid-column: 1;
+    border-right: 2px solid;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.current-playlist .playlist-info {
+    background-image: url("images/background_current.png");
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center;
+}
+
+.current-playlist .playlist-info h2,
+.current-playlist .playlist-info p {
+    color: white;
+}
+
+#intro {
+    padding: 20px;
+    color: rgb(105, 29, 105);
+    padding-inline: 70px;
+}
+
+#intro h2 {
+    font-size: 2em;
+}

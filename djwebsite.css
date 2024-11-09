@@ -1,0 +1,369 @@
+/* ---------------------- BANNER ----------------------*/
+
+header {
+    background-image: url("images/Banner2.png");
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    left: 0; 
+    z-index: 100;
+}
+
+.logo {
+    width: 250px; 
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 80px;
+    font-family: "Poppins", sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+nav ul li a:hover {
+    color: #ffdd57; 
+}
+  
+/* ---------------------- TOP GRID ----------------------*/
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    padding: 50px;
+    margin: 110px 30px 0px 30px;
+}
+
+
+.left-column {
+    display: grid;
+    grid-template-rows: 80px 240px;
+    padding: 0px;
+    gap: 20px;
+    height: 300px;
+}
+
+.left-column div {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h3 {
+    text-align: left;
+    margin-left: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(64, 0, 81);
+}
+
+.intro p {
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 0px;
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
+    color: rgb(64, 0, 81);
+    margin-top: 20px;
+}
+
+.right-column {
+    color: white;
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    padding-top: 30px;
+    background-color: rgb(105, 29, 105);
+}
+
+form {
+    font-family: "Poppins", sans-serif;
+}
+
+form input {
+    margin-top: 0px;
+    height: 30px;
+    width:auto;
+    border-radius: 5px;
+    border: none;
+    font-family: "Figtree", sans-serif;
+    width: 94%;
+    padding-inline: 10px;
+}
+
+button {
+    background-color: violet;
+    color: rgb(105, 29, 105);
+    height: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: violet;
+    color: rgb(105, 29, 105);
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+p.hide {
+    font-size: 10px;
+    color: rgb(105, 29, 105);
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+div.current {
+    display:flex;
+    background-color: violet;
+    justify-content: left;
+    padding-top: 25px;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 27px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+div.current h3 {
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 27px;
+}
+
+
+
+/* ---------------------- PLAYLISTS ----------------------*/
+
+.playlists {
+    display: grid;
+    columns: 1;
+    gap: 40px;
+    margin: 30px;
+    margin-top: 0px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.playlist {
+    display: grid;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.playlist:hover,
+.back:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.playlist.right {
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+}
+
+.playlist.left {
+    grid-template-columns: 2fr 1fr;
+    text-align: right;
+}
+
+.playlist .top-playlist {
+    margin: 0px;
+    display: flex;
+    justify-content: top;
+    height: 100px;
+}
+
+.playlist .top-playlist h3 {
+    width: 100%;
+}
+
+.playlist.right .top-playlist h3 {
+    margin-top: 0px;
+}
+
+.playlist h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    color: rgb(64, 0, 81);
+}
+
+.playlist p {
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+}
+
+.playlist div {
+    margin: 50px;
+}
+
+.playlist.left div h3,
+.playlist.left div p {
+    align-self: end;
+}
+
+.playlist p {
+    color: rgb(132, 0, 132);
+}
+
+.playlist img {
+    max-width: 100%;
+}
+
+.playlist button {
+    background-color: violet;
+    color: rgb(105, 29, 105);
+    height: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.playlist.right img {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.playlist.left img {
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+/* ---------------------- LOGIN PAGE ----------------------*/
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    padding: 50px;
+    margin: 90px 30px 0px 30px;
+}
+
+.back {
+    display:flex;
+    background-color: rgb(64, 0, 81);
+    justify-content: center;
+    padding-top: 25px;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 27px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back h3 {
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 27px;
+}
+
+.back a {
+    color: white;
+    text-decoration: none;
+}
+
+div.current2 {
+    background-color: violet;
+    justify-content: top;
+    padding-top: 25px;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 27px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-left: 30px;
+    margin-bottom: 0px;
+}
+
+.current2 h3 {
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 27px;
+    margin-top: 0px;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 270px;
+}
+
+.info {
+    text-align: right;
+    margin-right: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+.info h3{
+    font-size: 55px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.info h2,
+.playlist h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.playlist h2 {
+    font-family: "Figtree", sans-serif;
+    color: rgb(105, 29, 105);;
+}
+
+.info p {
+    font-size: 25px;
+}
+
+.info p.hide {
+    margin-top: 0px;
+}
+
+.account img {
+    border-radius: 15px;
+    height: 270px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro2 h3 {
+    text-align: left;
+    margin-left: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: rgb(64, 0, 81);
+    margin-left: 100px;
+    margin-top: 0px;
+    margin-bottom: 10px
+}
